@@ -114,7 +114,7 @@
         android:freezesText="false"
         android:password="false"
         android:text="ÜYELERİN BAKİYELERİNİ GÖSTER"
-        
+
         android:textColorHighlight="@color/colorAccent"
         android:textSize="19sp"
         android:textStyle="bold" />

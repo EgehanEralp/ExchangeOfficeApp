@@ -69,6 +69,10 @@ public class MainActivity2 extends AppCompatActivity {
         sharedPre=getPreferences(MODE_PRIVATE);
         editor=sharedPre.edit();
 
+        tlText=findViewById(R.id.tlText);
+        dolarText=findViewById(R.id.dolarText);
+        euroText=findViewById(R.id.euroText);
+
         Query sorgu = myRef.orderByChild("ad").equalTo(isim);
         sorgu.addValueEventListener(new ValueEventListener() {
             @Override
@@ -83,7 +87,11 @@ public class MainActivity2 extends AppCompatActivity {
                     bakiyeDOLAR=kullanici.getBakiyeUSD();
                     bakiyeEURO=kullanici.getBakiyeEUR();
 
+                    tlText.setText(" "+bakiyeTL+" TL");
+                    dolarText.setText(" "+bakiyeDOLAR+ " $");
+                    euroText.setText(" "+bakiyeEURO+ " €");
                 }
+
             }
 
             @Override
@@ -97,13 +105,11 @@ public class MainActivity2 extends AppCompatActivity {
         bakiyeEURO=0;*/
 
 
-        tlText=findViewById(R.id.tlText);
-        dolarText=findViewById(R.id.dolarText);
-        euroText=findViewById(R.id.euroText);
 
-        tlText.setText(" "+bakiyeTL+" TL");
+
+        /*tlText.setText(" "+bakiyeTL+" TL");
         dolarText.setText(" "+bakiyeDOLAR+ " $");
-        euroText.setText(" "+bakiyeEURO+ " €");
+        euroText.setText(" "+bakiyeEURO+ " €");*/
 
         textInfoD=findViewById(R.id.textInfoD);
         textInfoE=findViewById(R.id.textInfoE);

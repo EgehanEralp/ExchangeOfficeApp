@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity2">
 
     <TextView
         android:layout_width="wrap_content"
@@ -108,13 +108,13 @@
 
     <Button
         android:id="@+id/buttonSirala"
-        style="?attr/actionBarPopupTheme"
+
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:freezesText="false"
         android:password="false"
         android:text="ÜYELERİN BAKİYELERİNİ GÖSTER"
-        android:textColor="?attr/colorPrimaryDark"
+        
         android:textColorHighlight="@color/colorAccent"
         android:textSize="19sp"
         android:textStyle="bold" />
